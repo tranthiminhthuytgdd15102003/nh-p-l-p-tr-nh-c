@@ -2,12 +2,13 @@
 using namespace std;
 int main(){
     int a, tong = 0;
-	cout << "a = ";
+	  cout << "a = ";
     cin>>a;
     for(int i=1; i<=a; i++){
 		if (i % 3 == 0){
-			tong = tong +i;
+			tong += i;
 		}   
     }
     cout << tong;
+    return 0;
 }
