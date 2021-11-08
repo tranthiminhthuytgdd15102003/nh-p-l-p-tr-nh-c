@@ -8,7 +8,6 @@ int main(){
 		cin >> a[i];
 	}
     for(int i = 0; i < 10; i++){
-		
 		if( int (a[i]) % 2 != 0){
 			tong += a[i];
 		}
