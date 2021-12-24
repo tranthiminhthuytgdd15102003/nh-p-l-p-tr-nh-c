@@ -16,7 +16,6 @@ int main(){
         fflush(stdin);
         cin.getline(sv[i].msv, 100);
         cout << "Ho ten cua sv " << i << ": "; 
-        fflush(stdin);
         cin.getline(sv[i].ho_ten, 100);
         cout << "Diem giua ky cua sv " << i << ": ";
         cin >> sv[i].diem_giua_ky;
