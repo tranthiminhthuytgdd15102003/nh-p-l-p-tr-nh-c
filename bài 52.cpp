@@ -1,27 +1,14 @@
 #include <iostream>
 using namespace std;
-int nhap(){
-    int n;
+int main() {
+    int n, a = 0;
+    cout << "n = ";
     cin >> n;
-    return n;
-}
-void tinh(int n){
-    float F;
-    int mau_so;
-    for (int i = 1; i <= n; i++){
-        mau_so = 0;
-        for (int j = 1; j <= i; j++){
-            mau_so += j;
-        }
-        F = F + (float)1 / mau_so;
+    float s = 0;
+    for(int i = 1; i <= n; i++){
+        a += i;
+        s += (float)1 / a;
     }
-    cout << "F = " << F << endl;
-    return;
-}
-int main(){
-    int n;
-    cout << "Nhap n: ";
-    n = nhap();
-    tinh(n);
+    cout << "Tong = " << s << endl;
     return 0;
 }
